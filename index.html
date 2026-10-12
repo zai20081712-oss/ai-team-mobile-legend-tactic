@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Tactic - Way to Victory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon" aria-hidden="true">⚔️</span>
+                <h1>MLBB <span>Tactic</span></h1>
+            </div>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><button class="nav-link active" data-tab="tactics">Tactics & Rotation</button></li>
+                    <li><button class="nav-link" data-tab="heroes">Hero Database</button></li>
+                    <li><button class="nav-link" data-tab="meta">Meta Comps</button></li>
+                    <li><button class="nav-link" data-tab="counters">Counter Matrix</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main id="main-content">
+        <!-- TACTICS & ROTATION TAB -->
+        <section id="tactics" class="tab-content active" aria-labelledby="tactics-heading">
+            <div class="section-header">
+                <h2 id="tactics-heading">Map Rotations & Winning Strategies</h2>
+                <p>Master the Land of Dawn with professional-grade rotation guides and objective control checklists.</p>
+            </div>
+
+            <div class="tactics-grid">
+                <article class="card tactic-card">
+                    <div class="card-header-badge gold">Early Game</div>
+                    <h3>Gold Laner & Roamer Synergy</h3>
+                    <p>The roamer should help secure the lithowanderer at 0:45, then assist the mid lane before rotating back to protect the gold laner from dive attempts.</p>
+                    <ul class="checklist">
+                        <li><span>✓</span> Clear wave 1 quickly</li>
+                        <li><span>✓</span> Contest Lithowanderer</li>
+                        <li><span>✓</span> Avoid overextending without flicker</li>
+                    </ul>
+                </article>
+
+                <article class="card tactic-card">
+                    <div class="card-header-badge purple">Jungling</div>
+                    <h3>Efficient Retribution Pathing</h3>
+                    <p>Start on the side opposite to the enemy jungler's expected path to avoid early skirmishes, or secure level 4 for first turtle contest.</p>
+                    <ul class="checklist">
+                        <li><span>✓</span> Buff -> Little minions -> Buff</li>
+                        <li><span>✓</span> Save Retribution for Turtle secure</li>
+                        <li><span>✓</span> Track enemy red/blue buff timers</li>
+                    </ul>
+                </article>
+
+                <article class="card tactic-card">
+                    <div class="card-header-badge red">Objectives</div>
+                    <h3>Turtle & Lord Control</h3>
+                    <p>Turtle spawns at 2:00. Clear adjacent minion waves 20 seconds prior to turtle spawn so your team has priority to initiate or zone.</p>
+                    <ul class="checklist">
+                        <li><span>✓</span> Push minion waves before fight</li>
+                        <li><span>✓</span> Zone enemy jungler out of pit</li>
+                        <li><span>✓</span> Lord dynamic scaling after min 12</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- HERO DATABASE TAB -->
+        <section id="heroes" class="tab-content" aria-labelledby="heroes-heading">
+            <div class="section-header">
+                <h2 id="heroes-heading">Hero Statistics & Roles</h2>
+                <p>Browse through hero details, primary roles, and difficulty ratings.</p>
+            </div>
+
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <label for="hero-search" class="sr-only">Search heroes</label>
+                    <input type="text" id="hero-search" placeholder="Search hero by name or role (e.g. Assassin, Tigreal)..." aria-label="Search heroes">
+                </div>
+                <div class="filter-buttons" role="group" aria-label="Hero role filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Assassin">Assassin</button>
+                    <button class="filter-btn" data-filter="Mage">Mage</button>
+                    <button class="filter-btn" data-filter="Marksman">Marksman</button>
+                    <button class="filter-btn" data-filter="Tank">Tank</button>
+                    <button class="filter-btn" data-filter="Fighter">Fighter</button>
+                    <button class="filter-btn" data-filter="Support">Support</button>
+                </div>
+            </div>
+
+            <div id="hero-grid" class="hero-grid" aria-live="polite">
+                <!-- Populated via JavaScript -->
+            </div>
+        </section>
+
+        <!-- META COMOS TAB -->
+        <section id="meta" class="tab-content" aria-labelledby="meta-heading">
+            <div class="section-header">
+                <h2 id="meta-heading">Current Patch Meta Compositions</h2>
+                <p>Synergized team compositions proven to dominate ranked draft pick lobbies.</p>
+            </div>
+
+            <div class="meta-list">
+                <div class="card meta-card">
+                    <div class="meta-info">
+                        <span class="tier-badge mythic">Tier S+</span>
+                        <h3>Dive & Burst Composition</h3>
+                        <p>Designed to instantly delete enemy backline marksmen before team fights even begin.</p>
+                        <div class="meta-heroes">
+                            <span class="tag">Fanny / Ling</span>
+                            <span class="tag">Valentina</span>
+                            <span class="tag">Claude</span>
+                            <span class="tag">Tigreal</span>
+                            <span class="tag">Mathilda</span>
+                        </div>
+                    </div>
+                    <div class="meta-stats">
+                        <div class="stat-row"><span>Win Rate</span><strong>56.4%</strong></div>
+                        <div class="stat-row"><span>Execution</span><strong>Hard</strong></div>
+                    </div>
+                </div>
+
+                <div class="card meta-card">
+                    <div class="meta-info">
+                        <span class="tier-badge epic">Tier S</span>
+                        <h3>Global Poke & Sustain</h3>
+                        <p>Excel in prolonged sieges, wave clearing, and objective chipping with global ultimates.</p>
+                        <div class="meta-heroes">
+                            <span class="tag">X.Borg</span>
+                            <span class="tag">Yve / Pharsa</span>
+                            <span class="tag">Beatrix</span>
+                            <span class="tag">Minotaur</span>
+                            <span class="tag">Floryn</span>
+                        </div>
+                    </div>
+                    <div class="meta-stats">
+                        <div class="stat-row"><span>Win Rate</span><strong>54.1%</strong></div>
+                        <div class="stat-row"><span>Execution</span><strong>Medium</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COUNTERS TAB -->
+        <section id="counters" class="tab-content" aria-labelledby="counters-heading">
+            <div class="section-header">
+                <h2 id="counters-heading">Hero Counter Matrix</h2>
+                <p>Know who to pick or ban against high-priority meta threats.</p>
+            </div>
+
+            <div class="counter-grid">
+                <div class="card counter-card">
+                    <h3>Threat: Fanny (Assassin)</h3>
+                    <p class="counter-recommendation"><strong>Hard Counters:</strong> Khufra, Minsitthar, Saber</p>
+                    <p class="counter-tip">Khufra's bouncing ball stops cable dashes instantly. Minsitthar's ultimate locks down mobility skills.</p>
+                </div>
+                <div class="card counter-card">
+                    <h3>Threat: Wanwan (Marksman)</h3>
+                    <p class="counter-recommendation"><strong>Hard Counters:</strong> Khaleed, Phoveus, Twilight Armor item</p>
+                    <p class="counter-tip">Phoveus triggers skills whenever agile heroes dash. Keep your back against walls to block weakness triggers.</p>
+                </div>
+                <div class="card counter-card">
+                    <h3>Threat: Estes (Support)</h3>
+                    <p class="counter-recommendation"><strong>Hard Counters:</strong> Necklace of Durance, Dominance Ice, Sea Halberd</p>
+                    <p class="counter-tip">Stack anti-heal items across multiple roles to completely shut down his massive team healing.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2025 Mobile Legends Tactic. Unofficial fan-site built for tactical excellence. All game assets belong to Moonton.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
